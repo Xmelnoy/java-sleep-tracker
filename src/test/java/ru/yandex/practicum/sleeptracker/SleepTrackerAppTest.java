@@ -86,9 +86,9 @@ class SleepTrackerAppTest {
                         LocalDateTime.of(2026, 1, 3, 15, 20),
                         SleepQuality.NORMAL)
         );
-        SleepAnalysisResult result = function.apply(sessions);
-        assertEquals("Максимальная продолжительность сессии в минутах", result.getDescription());
-        assertEquals(480L, result.getValue());
+        SleepAnalysisResult res = function.apply(sessions);
+        assertEquals("Максимальная продолжительность сессии в минутах", res.getDescription());
+        assertEquals(480L, res.getValue());
     }
 
     @Test
