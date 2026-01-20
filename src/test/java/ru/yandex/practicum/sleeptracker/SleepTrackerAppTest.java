@@ -89,7 +89,6 @@ class SleepTrackerAppTest {
         SleepAnalysisResult result = function.apply(sessions);
         assertEquals("Максимальная продолжительность сессии в минутах", result.getDescription());
         assertEquals(480L, result.getValue());
-
     }
 
     @Test
